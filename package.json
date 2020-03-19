@@ -1,0 +1,10 @@
+{
+  "name": "js-oo-tic-tac-toe",
+  "version": "1.0.0",
+  "description": "JS version of the tic-tac-toe exercise. There will be another focused on functional, so don't dispair",
+  "main": "index.js",
+  "repository": "https://github.com/thoughtbot/js-oo-tic-tac-toe",
+  "author": "Kane Baccigalupi",
+  "license": "MIT",
+  "private": false
+}
