@@ -9,21 +9,29 @@
   "devDependencies": {
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
-    "@babel/preset-react": "^7.7.4",
+    "@babel/register": "^7.9.0",
+    "jsdom": "^16.2.1",
+    "mocha": "^7.1.1",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
     "standard": "^14.3.3",
+    "sinon": "^9.0.1",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   },
   "scripts": {
     "compile": "node_modules/.bin/webpack --mode development",
     "lint": "node_modules/.bin/standard --fix",
-    "test": ""
+    "test": "node_modules/.bin/mocha --recursive --require @babel/register && node_modules/.bin/standard"
   },
   "standard": {
     "ignore": [
       "dist/**/*"
+    ],
+    "globals": [
+      "describe",
+      "it"
     ]
-  }
+  },
+  "dependencies": {}
 }

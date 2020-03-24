@@ -7,7 +7,7 @@ game.
 
 ## General process
 
-If you haven't read the top level [README]('README.md'), more details are there
+If you haven't read the top level [README](README.md), more details are there
 about each of these point:
 
 1. Find and work with a mentor who has completed this
