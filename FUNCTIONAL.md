@@ -212,3 +212,72 @@ it('should cast a hex', () => {
     * Well named methods that share a name
     * Pay attention to colors and shapes in your IDE. Things that belong
       together have similar shapes and colors.
+
+## Features
+
+### 1/ Render an empty grid
+
+When you open the html page in a browser ... and more importantly when you run
+the game in tests, it renders an empty html grid. There should be column and row
+markers on the edges. Here is a ASCII version to guide your work:
+
+```text
+   1  2  3
+   __ __ __
+A |  |  |  |
+  |__|__|__|
+B |  |  |  |
+  |__|__|__|
+C |  |  |  |
+  |__|__|__|
+```
+
+### 2/ Prompt for next move
+
+When you open the page or render the app in the tests, you will see an input
+with the placeholder "Enter your coordinates" and a button "Enter". When the
+button is clicked, nothing happens. The form shouldn't do the default submit,
+and that should be tested.
+
+### 3/ Validate coordinates on click
+
+When you enter coordinatates that are valid and click the button. It prints the
+valid coordinates under the input. When you enter invalid coordinates and click
+the button, it shows an error message under the input that says "Please enter
+valid coordiates".
+
+### 4/ Submitting valid coordinates marks the board with an X
+
+When you enter valid coordinates and submit, the coordinates are no longer
+printed under the input. Instead the the board is marked with an 'X'.
+
+If the coordinates are invalid, the error message still is displayed under the
+input.
+
+### 5/ Filled in coordinates are invalid
+
+When you enter a coordinate that is already occupied, the error message under
+the input says "Choose an empty cell".
+
+Error message for other types of invalid coordinates stays the same. As does the
+behavior of filling empty cells with the form.
+
+### 6/ Game fills in a random cell after each player turn
+
+After you enter a valid coordinate filling in a cell, the game will fill in a
+random cell with an 'O'.
+
+### 7/ Game status message on filling
+
+The input and button, along with any error message disapear when the board is
+filled with 'X' and 'O'.
+
+The are will instead have one of three messages:
+
+* "You won" if the X team got three in a row
+* "Computer wins" if the O team got three in a row
+* "Draw" if neither is true
+
+### 8/ Game exits early on win
+
+When the X or O player wins, the game ends early showing the message.
