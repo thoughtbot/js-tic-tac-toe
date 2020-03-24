@@ -1,3 +1,3 @@
-import gameRunner from './async-app/gameRunner.js'
+import gameRunner from './async-app/gameRunner.mjs'
 
 gameRunner(process.stdout, process.stdin, process.exit)

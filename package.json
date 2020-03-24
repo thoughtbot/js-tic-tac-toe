@@ -1,6 +1,5 @@
 {
   "name": "js-tic-tac-toe",
-  "type": "module",
   "version": "1.0.0",
   "description": "JS version of the tic-tac-toe exercise. 3-in-1!",
   "repository": "https://github.com/thoughtbot/js-oo-tic-tac-toe",
