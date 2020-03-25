@@ -75,3 +75,8 @@ integrational tests.
 
 After a 2+ features separating out red-green-refator into separate PRs, its time
 to start doing them all in one PR.
+
+## Tests
+
+Tests can be run by the script `npm test` or `yarn test` depending on your
+peferred tool.
